@@ -32,6 +32,11 @@ public class PianoTest {
     }
 
     @Test
+    public void canGetType() {
+        assertEquals("percussion", piano.getType());
+    }
+
+    @Test
     public void canGetBrand() {
         assertEquals("Yamaha", piano.getBrand());
     }

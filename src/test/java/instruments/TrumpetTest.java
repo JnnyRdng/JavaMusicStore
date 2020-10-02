@@ -15,6 +15,11 @@ public class TrumpetTest {
     }
 
     @Test
+    public void canGetType() {
+        assertEquals("brass", trumpet.getType());
+    }
+
+    @Test
     public void canGetNumberOfValves() {
         assertEquals(3, trumpet.getValves());
     }
