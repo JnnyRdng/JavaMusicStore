@@ -1,5 +1,6 @@
 package instruments;
 
+import enums.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,7 +18,7 @@ public class GuitarTest {
 
     @Test
     public void canGetType() {
-        assertEquals("stringed", guitar.getType());
+        assertEquals(InstrumentType.STRINGED, guitar.getType());
     }
     @Test
     public void canGetStrings() {

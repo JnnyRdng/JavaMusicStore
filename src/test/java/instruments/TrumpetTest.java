@@ -1,5 +1,6 @@
 package instruments;
 
+import enums.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,7 +17,7 @@ public class TrumpetTest {
 
     @Test
     public void canGetType() {
-        assertEquals("brass", trumpet.getType());
+        assertEquals(InstrumentType.BRASS, trumpet.getType());
     }
 
     @Test

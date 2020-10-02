@@ -1,5 +1,6 @@
 package instruments;
 
+import enums.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +12,7 @@ public class PianoTest {
 
     @Before
     public void before() {
-        piano = new Piano(88, 3, "wood", "black", "Yamaha", 400, 450);
+        piano = new Piano("black", "Yamaha", 400, 450, 88, 3);
     }
 
 //    instrument abstract class tests
@@ -33,7 +34,7 @@ public class PianoTest {
 
     @Test
     public void canGetType() {
-        assertEquals("percussion", piano.getType());
+        assertEquals(InstrumentType.PERCUSSION, piano.getType());
     }
 
     @Test

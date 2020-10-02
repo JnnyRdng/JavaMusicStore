@@ -2,17 +2,18 @@ package instruments;
 
 import behaviours.IPlay;
 import behaviours.ISell;
+import enums.InstrumentType;
 
 public abstract class Instrument implements IPlay, ISell {
 
     private String material;
     private String colour;
-    private String type;
+    private InstrumentType type;
     private String brand;
     private int boughtPrice;
     private int sellPrice;
 
-    public Instrument(String material, String colour, String type, String brand, int boughtPrice, int sellPrice) {
+    public Instrument(String material, String colour, InstrumentType type, String brand, int boughtPrice, int sellPrice) {
         this.material = material;
         this.colour = colour;
         this.type = type;
@@ -33,7 +34,7 @@ public abstract class Instrument implements IPlay, ISell {
         this.colour = colour;
     }
 
-    public String getType() {
+    public InstrumentType getType() {
         return type;
     }
 

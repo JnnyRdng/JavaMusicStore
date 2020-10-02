@@ -1,12 +1,14 @@
 package instruments;
 
+import enums.InstrumentType;
+
 public class Piano extends Instrument {
 
     private int keys;
     private int pedals;
 
-    public Piano(int keys, int pedals, String material, String colour, String brand, int boughtPrice, int sellPrice) {
-        super(material, colour, "percussion", brand, boughtPrice, sellPrice);
+    public Piano(String colour, String brand, int boughtPrice, int sellPrice, int keys, int pedals) {
+        super("wood", colour, InstrumentType.PERCUSSION, brand, boughtPrice, sellPrice);
         this.keys = keys;
         this.pedals = pedals;
     }

@@ -18,7 +18,7 @@ public class ShopTest {
 
     @Before
     public void before() {
-        piano = new Piano(88, 3, "wood", "black", "Yamaha", 40000, 56000);
+        piano = new Piano("black", "Yamaha", 40000, 56000, 88, 3);
         sheetMusic = new SheetMusic(200, 699, "6/9 Freeform Jazz for Beginners", "Bach", "piano");
         plectrum = new Product("plectrum", 10, 100);
         shop = new Shop("Ray's Musical Emporium of Wonders", 100000);
